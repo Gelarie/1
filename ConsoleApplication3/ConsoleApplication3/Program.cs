@@ -10,6 +10,10 @@ namespace ConsoleApplication3
     {
         static void Main(string[] args)
         {
+            Triangle[] trianglemass = Reader.Read("Data.txt");
+            Console.WriteLine("Средний периметр треугольников" + Average.Perimeter(trianglemass));
+            Console.WriteLine("Средняя площадь" + Average.Area(trianglemass));
+
         }
     }
 }

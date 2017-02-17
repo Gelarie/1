@@ -12,13 +12,13 @@ namespace ConsoleApplication3
         Point Second;
         double lenght;
 
-        public Edge(Point pointfirst, Point pointsecond) //Конструктор 
+        public Edge(Point pointfirst, Point pointsecond) 
         {
             First = pointfirst;
             Second = pointsecond;
             CaculateEdgeLenght();
         }
-        public double CaculateEdgeLenght() //Метод 
+        public double CaculateEdgeLenght() 
         {
             return lenght = Math.Sqrt(Math.Pow((Second.X - First.X), 2) + Math.Pow((Second.Y - First.Y), 2));
         }
@@ -27,6 +27,7 @@ namespace ConsoleApplication3
         {
             get
             {
+         //       Console.WriteLine("Сторонa = " + lenght);
                 return lenght;
             }
         }
